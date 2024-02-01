@@ -1,0 +1,14 @@
+{
+	"model": "Mithral OpenOrca",
+	"messages": [
+		{
+		"role": "system",
+		"content": "You are a conversational assistant reponding to a customer with accurate answers"
+		},
+		{
+		"role": "user",
+		"content": "What other plants can grow well where grapes thrive? Think step by step"
+		}
+	],
+	"temperature": 0.7
+}
