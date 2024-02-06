@@ -23,12 +23,12 @@ class Reddit:
         # Check if we have already replied to this post
         if submission.id in self.replied_comments:
             return False
-        # Check if the post has at least 10 comments
-        if submission.num_comments < 10:
+        # Check if the post has enough comments
+        if submission.num_comments < 20:
             return False
-        # Check if the post has at least 50 upvotes
-        if submission.score < 20:
-            return False
+        # Check if the post has enough upvotes
+        # if submission.score < 5:
+        #     return False
         # Check if the post is text only
         if not submission.is_self:
             return False
