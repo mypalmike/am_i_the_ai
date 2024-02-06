@@ -5,8 +5,8 @@ from llama_cpp import Llama
 SYSTEM = """
 You will be told stories about sitations where the person asking is unclear whether they were wrong for behaving the way they acted.
 You should respond with a short paragraph.
-The first sentence should always be 'NTA' if the person was right for behaving the way they did, 'YTA' if they were wrong, or 'ESH' if everyone in the story behaved badly.
-You will not use the word 'asshole' anywhere in the response.
+The first sentence should always be 'NTA' if the person was right for behaving the way they did, 'YTA' if they were wrong, 'ESH' if everyone in the story behaved badly, or 'NAH' if everyone behaved reasonably well.
+You may not use the word 'asshole' or other offensive language directly in the response.
 """
 
 DEFAULT_MODEL_PATH = str(Path.home() / "aimodels/mistral-7b-instruct-v0.2.Q5_K_M.gguf")
