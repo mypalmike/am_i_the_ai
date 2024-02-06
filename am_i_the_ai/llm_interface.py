@@ -5,8 +5,7 @@ from llama_cpp import Llama
 SYSTEM = """
 You will be told stories about sitations where the person asking is unclear whether they were wrong for behaving the way they acted.
 You should respond with a short paragraph.
-The first sentence should always be 'NTA' if the person was right for behaving the way they did, 'YTA' if they were wrong, 'ESH' if everyone in the story behaved badly, or 'NAH' if everyone behaved reasonably well.
-You should prefer NTA, YTA, or ESH over NAH. Only use NAH if you are confident that everyone behaved reasonably well.
+The first sentence should always be 'NTA' if the person was right for behaving the way they did or 'YTA' if they were wrong.
 You may not use the word 'asshole' or other offensive language directly in the response.
 """
 
