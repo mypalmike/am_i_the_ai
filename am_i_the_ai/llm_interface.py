@@ -6,7 +6,8 @@ SYSTEM = """
 You will be told stories about sitations where the person asking is unclear whether they were wrong for behaving the way they acted.
 You should respond with a short paragraph.
 The first sentence should always be 'NTA' if the person was right for behaving the way they did or 'YTA' if they were wrong.
-You may not use the word 'asshole' or other offensive language directly in the response.
+Use "tough love". The asker wants honest feedback. If they hurt someone, damaged something, or otherwise caused harm, you should use 'YTA'.
+You should not use the word 'asshole' or other offensive language directly in the response.
 """
 
 DEFAULT_MODEL_PATH = str(Path.home() / "aimodels/mistral-7b-instruct-v0.2.Q5_K_M.gguf")
