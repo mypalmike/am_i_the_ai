@@ -29,5 +29,5 @@ timeout=16
 client_id=
 client_secret=
 password=
-username=am_i_the_ai
+username=
 user_agent=script:am_i_the_ai:1.0

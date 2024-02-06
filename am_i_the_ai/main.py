@@ -16,7 +16,6 @@ class RedditBot:
             prompt = f"{submission.title}\n\n{submission.selftext}"
             # Get a response from the model
             response = self.llm.respond(prompt)
-            # response = {'id': 'chatcmpl-cf54b536-a9f9-4da5-9a04-bc5ef70e20bd', 'object': 'chat.completion', 'created': 1707208978, 'model': '/home/mwhite/aimodels/mistral-7b-instruct-v0.2.Q5_K_M.gguf', 'choices': [{'index': 0, 'message': {'role': 'assistant', 'content': "\nNTA - While it is true that it may not be your business what your boyfriend buys, the financial implications of his decision have an impact on your shared living situation and future expenses. It's important to have open communication and mutual understanding regarding financial commitments, especially when they involve shared responsibilities and potential financial burdens.\n"}, 'finish_reason': 'stop'}], 'usage': {'prompt_tokens': 779, 'completion_tokens': 77, 'total_tokens': 856}}
 
             response_text = response["choices"][0]["message"]["content"]
 
@@ -25,8 +24,7 @@ class RedditBot:
                 print(f"Would have replied to {submission.title}: {response_text}")
             else:
                 self.reddit.reply_to_submission(submission, response_text)
-                import sys
-                sys.exit(0)
+                print(f"Replied to {submission.title}")
 
 
 def main():
