@@ -1,5 +1,5 @@
 # Am I The AI
-This is a reddit bot that responds to r/aita with an AI-based answer.
+This is a reddit bot that responds to r/aita with an AI-based answer using llama.cpp (via llama-cpp-python).
 
 ## Status
 The bot got perma-banned from the r/aita within 12 hours of launch.
